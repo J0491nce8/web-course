@@ -1,0 +1,145 @@
+body{
+    font-size: 16px;
+    /*color: #fff;
+    background-color: #fff;*/
+    font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav{
+    background-color: #FF5733;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+  
+.navbar-brand h1 { /* Restaurant name */
+    /*font-family: 'Lora', serif;*/
+    color: #b00334;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:link, .navbar-brand a:visited, .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+  
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a {
+    color: #000000;
+    text-align: center;
+}
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+#nav-list a span {
+    font-size: 1.8em;
+}
+/* END HEADER */
+
+
+/* BODY */
+#main-content h1{
+    /*text-align: center;*/
+    padding: 10px;
+}
+
+#main-content p.content{
+    background-color: #ffa500;
+    width: 95%;
+    height: 1800px;
+    padding: 45px 10px 10px 10px;
+    overflow: auto;
+    margin-top: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#main-content p.title{
+    position:relative;
+    left: 150px;
+    top: 50px;
+
+    width: 30%;
+    height: 35px;
+    padding: 7px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+/* END BODY */
+
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+
+
+
+
+/********** sm screen (old Extra small) **********/
+
+@media (max-width: 767px) {
+
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+}
